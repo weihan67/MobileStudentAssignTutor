@@ -13,6 +13,33 @@
         android:theme="@style/Theme.StudentAssignTutor"
         tools:targetApi="31">
         <activity
+            android:name=".SelectCourse"
+            android:exported="false" />
+        <activity
+            android:name=".StudentTimeTable"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRegister"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLogin"
+            android:exported="false" />
+        <activity
+            android:name=".StudentPaymentHistory"
+            android:exported="false" />
+        <activity
+            android:name=".StudentCurrentBilling"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".StudentProfile"
+            android:exported="false" />
+        <activity
+            android:name=".RateTutor"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
