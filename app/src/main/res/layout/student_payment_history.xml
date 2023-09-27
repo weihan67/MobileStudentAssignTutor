@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0EBF1">
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="358dp"
+        android:layout_height="94dp"
+        android:background="#7FF359"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="544dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="36dp"
+        android:layout_height="23dp"
+        android:text="Paid"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="342dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Bill"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="411dp"
+        android:layout_height="76dp"
+        android:background="#C3BFBF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="413dp"
+        android:layout_height="59dp"
+        android:background="#C3BFBF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <TextView
+        android:id="@+id/unitutor_main6"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:text="UNITUTOR"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/graduationhat_logo6"
+        android:layout_width="95dp"
+        android:layout_height="66dp"
+        app:srcCompat="@drawable/graduation_logo"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/profile_button"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/profile_logo"
+        tools:layout_editor_absoluteX="321dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <ImageView
+        android:id="@+id/home_button"
+        android:layout_width="71dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/home_logo"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="676dp" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="68dp"
+        android:layout_height="49dp"
+        app:srcCompat="@drawable/back_logo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="683dp" />
+
+    <Button
+        android:id="@+id/student_timetable_header"
+        android:layout_width="287dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#B4BDB1"
+        android:text="BILLING"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <Button
+        android:id="@+id/student_logout"
+        android:layout_width="177dp"
+        android:layout_height="80dp"
+        android:backgroundTint="#F6E6B5"
+        android:text="Payment History"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <Button
+        android:id="@+id/student_timetable"
+        android:layout_width="178dp"
+        android:layout_height="77dp"
+        android:backgroundTint="#F6E6B5"
+        android:text="CURRENT BILLING"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="358dp"
+        android:layout_height="94dp"
+        android:background="#7FF359"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="358dp"
+        android:layout_height="94dp"
+        android:background="#7FF359"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Bill"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Bill"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="317dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paid"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="349dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
