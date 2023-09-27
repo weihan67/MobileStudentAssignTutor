@@ -48,16 +48,20 @@
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/graduationhat_logo6"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
 
     <ImageView
         android:id="@+id/graduationhat_logo6"
         android:layout_width="95dp"
         android:layout_height="66dp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/graduation_logo"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:layout_editor_absoluteY="10dp" />
 
     <View
         android:id="@+id/view4"
@@ -84,26 +88,37 @@
         android:id="@+id/tutor_recommend_1"
         android:layout_width="92dp"
         android:layout_height="78dp"
-        app:srcCompat="@drawable/tutor_logo"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="262dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4"
+        app:layout_constraintVertical_bias="0.345"
+        app:srcCompat="@drawable/tutor_logo" />
 
     <ImageView
         android:id="@+id/tutor_recommend_4"
         android:layout_width="92dp"
         android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/tutor_recomened_1_info5"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="@+id/view5"
         app:layout_constraintTop_toTopOf="@+id/view5"
-        app:srcCompat="@drawable/tutor_logo"
-        tools:layout_editor_absoluteX="37dp" />
+        app:layout_constraintVertical_bias="0.236"
+        app:srcCompat="@drawable/tutor_logo" />
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="243dp"
         android:layout_height="43dp"
+        android:layout_marginTop="8dp"
         android:indeterminate="false"
         android:progressTint="#FFEB3B"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toBottomOf="@+id/tutor_recomened_1_info" />
 
     <RatingBar
         android:id="@+id/ratingBar5"
@@ -131,8 +146,11 @@
         android:layout_height="wrap_content"
         android:text="Law Yong Jin"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/ratingBar5"
+        app:layout_constraintStart_toStartOf="@+id/view5"
+        app:layout_constraintTop_toBottomOf="@+id/tutor_recommend_4"
+        app:layout_constraintVertical_bias="0.565" />
 
     <TextView
         android:id="@+id/tutor_recomened_1_info"
@@ -152,32 +170,36 @@
         android:textAlignment="center"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="@+id/view5"
         app:layout_constraintTop_toTopOf="@+id/view5"
-        app:layout_constraintVertical_bias="0.162"
-        tools:layout_editor_absoluteX="187dp" />
+        app:layout_constraintVertical_bias="0.162" />
 
     <ImageView
         android:id="@+id/profile_button"
         android:layout_width="62dp"
         android:layout_height="59dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
         app:srcCompat="@drawable/profile_logo"
-        tools:layout_editor_absoluteX="321dp"
         tools:layout_editor_absoluteY="676dp" />
 
     <ImageView
         android:id="@+id/home_button"
         android:layout_width="71dp"
         android:layout_height="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/profile_button"
+        app:layout_constraintStart_toEndOf="@+id/back_button"
         app:srcCompat="@drawable/home_logo"
-        tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="676dp" />
 
     <ImageView
         android:id="@+id/back_button"
         android:layout_width="68dp"
         android:layout_height="49dp"
+        app:layout_constraintStart_toStartOf="@+id/view7"
         app:srcCompat="@drawable/back_logo"
-        tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="683dp" />
 
     <View

@@ -15,16 +15,19 @@
         android:textColorHint="#ED6C6C"
         android:textSize="34sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="143dp" />
+        app:layout_constraintBottom_toTopOf="@+id/student_logo4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/graduationhat_logo5"
         android:layout_width="159dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/graduation_logo"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintBottom_toTopOf="@+id/unitutor_main5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/graduation_logo" />
 
     <Button
         android:id="@+id/student_register_comfirm"
@@ -33,16 +36,22 @@
         android:backgroundTint="#7FF359"
         android:text="Comfirm"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="587dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_register_comfirm_password"
+        app:layout_constraintVertical_bias="0.273" />
 
     <ImageView
         android:id="@+id/student_logo4"
         android:layout_width="152dp"
         android:layout_height="106dp"
-        app:srcCompat="@drawable/student_logo"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="197dp" />
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/student_register_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/student_logo" />
 
     <EditText
         android:id="@+id/student_register_email"
@@ -53,8 +62,9 @@
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="336dp" />
+        app:layout_constraintBottom_toTopOf="@+id/student_register_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/student_register_password"
@@ -65,19 +75,23 @@
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="422dp" />
 
     <EditText
         android:id="@+id/student_register_comfirm_password"
         android:layout_width="220dp"
         android:layout_height="70dp"
+        android:layout_marginBottom="160dp"
         android:ems="10"
         android:hint="Comfirm Password"
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="492dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

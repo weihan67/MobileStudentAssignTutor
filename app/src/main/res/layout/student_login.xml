@@ -10,19 +10,23 @@
         android:id="@+id/unitutor_main3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:text="UNITUTOR"
         android:textSize="34sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="143dp" />
+        app:layout_constraintBottom_toTopOf="@+id/student_logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/graduationhat_logo3"
         android:layout_width="159dp"
         android:layout_height="124dp"
-        app:srcCompat="@drawable/graduation_logo"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintBottom_toTopOf="@+id/unitutor_main3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/graduation_logo" />
 
     <Button
         android:id="@+id/student_login_comfirm"
@@ -31,28 +35,36 @@
         android:backgroundTint="#7FF359"
         android:text="Comfirm"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="118dp"
-        tools:layout_editor_absoluteY="557dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_login_password" />
 
     <ImageView
         android:id="@+id/student_logo2"
         android:layout_width="152dp"
         android:layout_height="106dp"
-        app:srcCompat="@drawable/student_logo"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="197dp" />
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/student_login_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/student_logo" />
 
     <EditText
         android:id="@+id/student_login_email"
         android:layout_width="220dp"
         android:layout_height="70dp"
+        android:layout_marginBottom="4dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="336dp" />
+        app:layout_constraintBottom_toTopOf="@+id/student_login_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/student_login_password"
@@ -63,7 +75,8 @@
         android:inputType="textPassword"
         android:textAlignment="center"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="422dp" />
 
     <TextView
@@ -73,7 +86,9 @@
         android:text="Forgot Password?"
         android:textSize="14sp"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="501dp" />
+        app:layout_constraintBottom_toTopOf="@+id/student_login_comfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_login_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

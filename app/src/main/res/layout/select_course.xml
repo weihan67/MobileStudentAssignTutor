@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-1dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/unitutor_main4"
@@ -24,16 +24,19 @@
         android:textAlignment="center"
         android:textSize="34sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/graduationhat_logo4"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/graduationhat_logo4"
         android:layout_width="95dp"
         android:layout_height="66dp"
-        app:srcCompat="@drawable/graduation_logo"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/graduation_logo" />
 
     <TextView
         android:id="@+id/select_course_caption"
@@ -44,22 +47,32 @@
         android:textColor="#1C1A1A"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintBottom_toTopOf="@+id/course_search]"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="1.0" />
 
     <SearchView
         android:id="@+id/course_search]"
         android:layout_width="302dp"
         android:layout_height="48dp"
-        tools:layout_editor_absoluteX="67dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="177dp" />
 
     <Spinner
         android:id="@+id/course_select"
         android:layout_width="302dp"
         android:layout_height="43dp"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="225dp" />
+        app:layout_constraintBottom_toTopOf="@+id/course_comfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_search]"
+        app:layout_constraintVertical_bias="0.027" />
 
     <Button
         android:id="@+id/course_comfirm"
@@ -67,7 +80,11 @@
         android:layout_height="59dp"
         android:backgroundTint="#7FF359"
         android:text="COMFIRM"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="519dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_search]"
+        app:layout_constraintVertical_bias="0.501" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

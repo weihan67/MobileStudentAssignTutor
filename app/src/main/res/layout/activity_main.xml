@@ -11,50 +11,60 @@
         android:id="@+id/unitutor_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
         android:text="UNITUTOR"
         android:textSize="34sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="123dp"
-        tools:layout_editor_absoluteY="264dp" />
+        app:layout_constraintBottom_toTopOf="@+id/caption_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/graduationhat_logo"
         android:layout_width="240dp"
         android:layout_height="227dp"
-        app:srcCompat="@drawable/graduation_logo"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="46dp" />
+        app:layout_constraintBottom_toTopOf="@+id/unitutor_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/graduation_logo" />
 
     <TextView
         android:id="@+id/caption_main"
         android:layout_width="221dp"
         android:layout_height="115dp"
+        android:layout_marginBottom="124dp"
         android:text="&quot;Investing In Knowledge Your Pathway to Sucess&quot;"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintBottom_toTopOf="@+id/student_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/student_button"
         android:layout_width="175dp"
         android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="76dp"
         android:backgroundTint="#EFEBEB"
         android:text="Student"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="582dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/tutor_button"
         android:layout_width="175dp"
         android:layout_height="74dp"
+        android:layout_marginBottom="80dp"
         android:backgroundTint="#EFEBEB"
         android:text="Tutor"
         android:textColorLink="#BA3232"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="582dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/student_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

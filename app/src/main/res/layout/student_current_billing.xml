@@ -75,8 +75,11 @@
         android:layout_height="58dp"
         android:backgroundTint="#B4BDB1"
         android:text="BILLING"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="127dp" />
+        app:layout_constraintBottom_toTopOf="@+id/student_timetable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.46" />
 
     <Button
         android:id="@+id/student_logout"
@@ -93,7 +96,8 @@
         android:layout_height="77dp"
         android:backgroundTint="#F6E6B5"
         android:text="CURRENT BILLING"
-        tools:layout_editor_absoluteX="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/student_logout"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="210dp" />
 
     <View
@@ -101,7 +105,8 @@
         android:layout_width="358dp"
         android:layout_height="94dp"
         android:background="#FFC107"
-        tools:layout_editor_absoluteX="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="329dp" />
 
     <View
@@ -118,8 +123,10 @@
         android:layout_height="wrap_content"
         android:text="Student Bill"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="336dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/view6"
+        app:layout_constraintVertical_bias="0.093"
+        tools:layout_editor_absoluteX="40dp" />
 
     <TextView
         android:id="@+id/textView4"
@@ -127,8 +134,10 @@
         android:layout_height="wrap_content"
         android:text="Student Bill"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="481dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:layout_constraintVertical_bias="0.12"
+        tools:layout_editor_absoluteX="31dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -136,8 +145,10 @@
         android:layout_height="wrap_content"
         android:text="Pending"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="336dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintTop_toTopOf="@+id/view6"
+        app:layout_constraintVertical_bias="0.093"
+        tools:layout_editor_absoluteX="321dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -145,7 +156,9 @@
         android:layout_height="wrap_content"
         android:text="Pending"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="321dp"
-        tools:layout_editor_absoluteY="481dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:layout_constraintVertical_bias="0.12"
+        tools:layout_editor_absoluteX="321dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
