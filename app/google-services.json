@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "44413549807",
+    "project_id": "tutordatabase-aa792",
+    "storage_bucket": "tutordatabase-aa792.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44413549807:android:fbb76dd4fe44f21461ef1a",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChf5j_hXXMPgMJu-4ECSYOhHQTGC6If90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
