@@ -1,18 +1,20 @@
 package com.example.studentassigntutor
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var studentButton : Button
+    private lateinit var tutorButton : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        student_button.setOnClickListener { navigateToStudentPage() }
-        tutor_button.setOnClickListener { navigateToTutorPage() }
+        studentButton = findViewById(R.id.student_button)
+        tutorButton = findViewById(R.id.tutor_button)
+        studentButton.setOnClickListener { this.navigateToStudentPage() }
+        tutorButton.setOnClickListener { this.navigateToTutorPage() }
     }
 
     private fun navigateToStudentPage() {
@@ -25,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 }
+
 
     /*private lateinit var databaseReference: DatabaseReference
 
