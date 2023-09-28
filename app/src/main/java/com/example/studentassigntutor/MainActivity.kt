@@ -1,13 +1,32 @@
 package com.example.studentassigntutor
 
-import android.os.Bundle
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.*
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.ValueEventListener
+import android.os.Bundle
+import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var databaseReference: DatabaseReference
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        student_button.setOnClickListener { navigateToStudentPage() }
+        tutor_button.setOnClickListener { navigateToTutorPage() }
+    }
+
+    private fun navigateToStudentPage() {
+        val intent = Intent(this, StudentLogin::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToTutorPage() {
+        val intent = Intent(this, TutorLogin::class.java)
+        startActivity(intent)
+    }
+}
+
+    /*private lateinit var databaseReference: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,5 +63,4 @@ class MainActivity : AppCompatActivity() {
                 // Handle any errors
             }
         })
-    }
-}
+    }*/
